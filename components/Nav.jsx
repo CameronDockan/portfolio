@@ -24,24 +24,20 @@ const Nav = () => {
 
                 <button 
                 className="burger_btn" 
-                onClick={toggleClass}>
-                <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className="burger"
-                    viewBox="0, 0, 50, 50"
-                    width="50px"
-                    height="50px"
-                    overflow="visible"
-                    >
-                        <path className={isActive? 'line top active': 'line top inactive'} d="M5 15 L25 15" stroke="#BEA5A9" strokeLinecap="round" strokeWidth="3" fill="none"/>
-                        <path className={isActive? 'line middle active': 'line middle inactive'} d="M5 25 L25 25" stroke="#BEA5A9" strokeLinecap="round" strokeWidth="3" fill="none"/>
-                        <path className={isActive? 'line bottom active': 'line bottom inactive'} d="M5 35 L25 35" stroke="#BEA5A9" strokeLinecap="round" strokeWidth="3" fill="none" />
-                        <path className={isActive? 'crescent active': 'crescent inactive'} d="M5 35 L25 35" stroke="#BEA5A9" strokeLinecap="round" strokeWidth="3" fill="none" />
-
-
-                </svg>
+                onClick={toggleClass}
+                >
+                    <div className={isActive? "line top active": "line top inactive"}></div>
+                    <div className={isActive? "line middle active": "line middle inactive"}></div>
+                    <div className={isActive? "line bottom active": "line bottom inactive"}></div>
+                    <div className={isActive? "circle active": "circle inactive"}></div>
                 </button>
 
+                <ol className="nav_ol">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ol>
 
 
             </nav>
