@@ -10,7 +10,8 @@ const Nav = () => {
 
     return (
         <>
-            <nav>
+        <header>
+            <nav className="main_nav">
                 <div className="logo_container">
                     <svg id="logo_filled" width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M25 0L44.5458 9.41276L49.3732 30.563L35.8471 47.5242H14.1529L0.626802 30.563L5.45421 9.41276L25 0Z" fill="#BEA5A9"/>
@@ -37,13 +38,46 @@ const Nav = () => {
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
+
+                    <div className="resume_div_container">
+                        <div className="resume_fill_div">
+                        </div>
+                        <button className="resume_btn"><a href="#">Resume</a></button>
+                    </div>
                 </ol>
-
-
             </nav>
-            {/* <svg viewBox="0 0 10 10">
-                <path d="M2,2 L8,8" stroke="aliceBlue" />
-            </svg> */}
+
+            <nav className={isActive?"collapsible_nav opened":"collapsible_nav closed"}>
+                <ul>
+                    <li>
+                        <div>01.</div>
+                        <a href="#">About</a>
+                        </li>
+                    <li>
+                        <div>02.</div>
+                        <a href="#">Experience</a>
+                        </li>
+                    <li>
+                        <div>03.</div>
+                        <a href="#">Work</a>
+                        </li>
+                    <li>
+                        <div>04.</div>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <div className="resume_div_container_alt">
+                            <div className="resume_fill_div_alt"></div>
+                            <button className="resume_btn_alt">
+                                <a href="#">Resume</a>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
         </>
     )
 }
