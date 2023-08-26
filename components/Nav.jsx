@@ -36,7 +36,7 @@ const Nav = () => {
                 <ol className="nav_ol">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Experience</a></li>
-                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
 
                     <div className="resume_div_container">
@@ -59,7 +59,7 @@ const Nav = () => {
                         </li>
                     <li>
                         <div>03.</div>
-                        <a href="#">Work</a>
+                        <a href="#">Projects</a>
                         </li>
                     <li>
                         <div>04.</div>
