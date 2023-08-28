@@ -2,9 +2,9 @@
 const AboutMe = () => {
     return (
         <>
-            <section className="am_section">
+            <section className="am_section counter_section">
                 <div className="am_title_container">
-                    <span className="title_number">01.</span><h1 className="am_title">About Me</h1><span className="am_title_line"></span>
+                    <h1 className="am_title">About Me</h1><span className="am_title_line"></span>
                 </div>
                 
                 <div className="am_changing_flex_container">
@@ -29,31 +29,31 @@ const AboutMe = () => {
                         <ul className="technologies_ul">
                             <li>
                                 <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" stroke-width="3"/>
+                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" strokeWidth="3"/>
                                 </svg>
                                 <p>HTML</p>
                             </li>
                             <li>
                                 <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" stroke-width="3"/>
+                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" strokeWidth="3"/>
                                 </svg>
                                 <p>CSS</p>
                             </li>
                             <li>
                                 <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" stroke-width="3"/>
+                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" strokeWidth="3"/>
                                 </svg>
                                 <p>JavaScript (ES6+)</p>
                             </li>
                             <li>
                             <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" stroke-width="3"/>
+                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" strokeWidth="3"/>
                             </svg>
                                 <p>React</p>
                             </li>
                             <li>
                                 <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" stroke-width="3"/>
+                                    <path d="M28.25 21.8971L8.74997 33.1554C5.74997 34.8875 1.99997 32.7224 1.99997 29.2583V6.74167C1.99997 3.27757 5.74997 1.1125 8.74997 2.84456L28.25 14.1029C31.25 15.8349 31.25 20.1651 28.25 21.8971Z" fill="#0A192F" stroke="#BEA5A9" strokeWidth="3"/>
                                 </svg>
                                 <p>Redux</p>
                             </li>

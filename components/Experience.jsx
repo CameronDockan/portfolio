@@ -3,9 +3,8 @@
 const Experience = () => {
     return (
         <>
-            <section className="e_section">
+            <section className="e_section counter_section">
                 <div className="e_title_container">
-                    <div className="e_title_number">02.</div>
                     <h1 className="e_title">Experience</h1>
                     <div className="e_title_line"></div>
                 </div>

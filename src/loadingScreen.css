@@ -1,0 +1,146 @@
+:root {
+    /* d for dark */
+    /* m for medium */
+    /* b for bright */
+    /* p for primary */
+    /* s for secondary */
+
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+
+
+    /* spot pallette */
+    /* --navy */
+    --fadedNavy: #38445D;
+    --lightBlue: #E3F0FF;
+    --goldiLocks: #D8A31A;
+
+    /* dotting palette */
+    --fadedNavy2: #A5ABBD;
+    --reddishBrown: #2D0F16;
+    --creamyRedBrown: #BEA5A9;
+
+    --resumeWidth: 35px;
+    --baseFontSize: 16px;
+    --contentWidth: 90%;
+    --sectionMargin: 50px 0;
+    --containerPadding: 15px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.l_screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dark-navy);
+    color: var(--lightBlue);
+    position: fixed;
+    z-index: 3;
+}
+
+.l_screen.finish {
+    transition: opacity 2.5s ease;
+    opacity: 0;
+}
+
+.l_logo_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shrink 1s linear 3s forwards;
+}
+
+#l_logo_filled {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shrink 1s cubic-bezier(0.645,0.045,0.355,1) 2.5s forwards;
+}
+
+#l_logo_filled path {
+    fill: var(--dark-navy);
+    animation: fill_in_cream 1s linear 1.5s forwards;
+}
+
+#l_logo_stroked {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: offset 1.5s cubic-bezier(0.645,0.045,0.355,1) forwards, shrink 1s cubic-bezier(0.645,0.045,0.355,1) 2.5s forwards;
+}
+
+/* originally fill="#E3F0FF" */
+#l_logo_initials {
+    fill: var(--dark-navy);
+    animation: fill_in_light 1s ease 1.5s forwards;
+}
+
+/* originally fill="#0A192F" */
+#l_logo_initials_bg {
+    fill: var(--dark-navy);
+    animation: fill_in_navy 1s ease 1.5s forwards;
+}
+
+/* #test {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill_in_navy {
+    100% {
+        fill: var(--navy);
+    }
+}
+
+@keyframes fill_in_light {
+    100% {
+        fill: var(--lightBlue);
+    }
+}
+
+@keyframes fill_in_cream {
+    100% {
+        fill: var(--creamyRedBrown);
+    }
+}
+
+@keyframes shrink {
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+@keyframes lowerOpacity {
+    100% {
+        opacity: 0;
+    }
+
+}
