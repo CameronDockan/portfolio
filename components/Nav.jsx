@@ -1,7 +1,32 @@
-import { useState } from "react"
+// IA == is animating
+import { useState, useEffect } from "react"
 
 const Nav = () => {
     const [isActive, setIsActive] = useState(false);
+
+    const [logoIA, setLIA] = useState();
+    const [aboutIA, setAIA] = useState();
+    const [expIA, setEIA] = useState();
+    const [projIA, setPIA] = useState();
+    const [contactIA, setCIA] = useState();
+    const [resIA, setRIA] = useState();
+    //nav
+    useEffect(() => {
+        setLIA(false);
+        setAIA(false);
+        setEIA(false);
+        setPIA(false);
+        setCIA(false);
+        setRIA(false);
+        setTimeout(() => {
+            setLIA(true);
+            setAIA(true);
+            setEIA(true);
+            setPIA(true);
+            setCIA(true);
+            setRIA(true);
+        }, 3000)
+    }, [])
 
     const toggleClass = () => {
         setIsActive(!isActive)
@@ -12,7 +37,7 @@ const Nav = () => {
         <>
         <header>
             <nav className="main_nav">
-                <div className="logo_container">
+                <div className={logoIA ? "logo_container visible" : "logo_container invisible"}>
                     <svg id="logo_filled" width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M25 0L44.5458 9.41276L49.3732 30.563L35.8471 47.5242H14.1529L0.626802 30.563L5.45421 9.41276L25 0Z" fill="#BEA5A9"/>
                     </svg>
@@ -34,15 +59,15 @@ const Nav = () => {
                 </button>
 
                 <ol className="nav_ol">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li className={aboutIA ? "li_about visible" : "li_about invisible"}><a href="#">About</a></li>
+                    <li className={expIA ? "li_exp visible" : "li_exp invisible"}><a href="#">Experience</a></li>
+                    <li className={projIA ? "li_proj visible" : "li_proj invisible"}><a href="#">Projects</a></li>
+                    <li className={contactIA ? "li_contact visible" : "li_contact invisible"}><a href="#">Contact</a></li>
 
-                    <div className="resume_div_container">
-                        <div className="resume_fill_div">
+                    <div className={resIA ? "resume_div_container visible" : "resume_div_container invisible"}>
+                        <div className={resIA ? "resume_fill_div visible" : "resume_fill_div invisible"}>
                         </div>
-                        <button className="resume_btn"><a href="#">Resume</a></button>
+                        <button className={resIA ? "resume_btn visible" : "resume_btn invisible"}><a href="#">Resume</a></button>
                     </div>
                 </ol>
             </nav>

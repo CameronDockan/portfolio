@@ -1,0 +1,48 @@
+.am_section.counter_section {
+    transition: opacity 1s ease;
+}
+
+.am_section.counter_section.invisible {
+    opacity: 0;
+}
+
+.am_section.counter_section.visible {
+    opacity: 1;
+}
+
+.e_section.counter_section {
+    transition: opacity 1s ease;
+}
+
+.e_section.counter_section.invisible {
+    opacity: 0;
+}
+
+.e_section.counter_section.visible {
+    opacity: 1;
+}
+
+.p_section.counter_section {
+    transition: opacity 1s ease;
+}
+
+.p_section.counter_section.invisible {
+    opacity: 0;
+}
+
+.p_section.counter_section.visible {
+    opacity: 1;
+}
+
+.c_section.counter_section {
+    transition: opacity 1s ease;
+}
+
+.c_section.counter_section.invisible {
+    opacity: 0;
+}
+
+.c_section.counter_section.visible {
+    opacity: 1;
+}
+

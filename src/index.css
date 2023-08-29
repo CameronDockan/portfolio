@@ -31,6 +31,7 @@
     --fadedNavy2: #A5ABBD;
     --reddishBrown: #2D0F16;
     --creamyRedBrown: #BEA5A9;
+    --darkCream: #7e545b;
 
     --resumeWidth: 35px;
     --baseFontSize: 16px;
@@ -321,7 +322,7 @@ header {
     border-radius: 5px;
 }
 
-.resume_div_container:hover .resume_btn {
+.resume_div_container:hover .resume_btn.visible {
     transform: translate(-55%, -58%);
 }
 
@@ -515,7 +516,7 @@ header {
 
 .link_to_best_proj_container:hover .best_proj_btn {
     transform: translate(-52%, -56%);
-    color: var(--creamyRedBrown);
+    /* color: var(--creamyRedBrown); */
 }
 
 
@@ -746,6 +747,12 @@ header {
     padding: 50px;
     margin: 20px 0;
     overflow: scroll;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.commissioned_proj_div:hover {
+    background-color: var(--lightest-navy);
 }
 
 .commissioned_proj_div > * {

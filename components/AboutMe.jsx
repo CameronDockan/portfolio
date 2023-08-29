@@ -1,8 +1,41 @@
 // am short for about me
+import {useRef, useEffect, useState} from 'react'
+
+
 const AboutMe = () => {
+    const amRef = useRef();
+    const [visibilityPercentage, setVP] = useState(0);
+    // TIC stands for thresholdIsCrossed
+    const [TIC, setTIC] = useState(false);
+
+    let amOptions = {
+        threshold: [.1,.2,.3,.4,.5,.6,.7,.8,.9,1],
+    }
+
+    useEffect(() => {
+        const amObserver = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+                setVP(Math.floor(entry.intersectionRatio * 100))
+        }, amOptions)
+
+        amObserver.observe(amRef.current)
+
+    }, [])
+
+    useEffect(() => {
+        // only 'if' statement and not 'if else' because 
+        //we want section class to become true and stay true 
+        //so that when the user scrolls back up the page, the section remains visible.
+        if (visibilityPercentage > 10) {
+            setTIC(true)
+        }
+    }, [visibilityPercentage])
+
+
+
     return (
         <>
-            <section className="am_section counter_section">
+            <section ref={amRef} className={TIC ? "am_section counter_section visible" : "am_section counter_section invisible"}>
                 <div className="am_title_container">
                     <h1 className="am_title">About Me</h1><span className="am_title_line"></span>
                 </div>

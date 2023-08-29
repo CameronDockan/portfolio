@@ -1,0 +1,152 @@
+.logo_container {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.li_about {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.li_exp {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.li_proj {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.li_contact {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.resume_div_container {
+    opacity: 0;
+    transform: translate(0, -45px);
+
+}
+
+/* .resume_fill_div {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.resume_btn {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+} */
+
+.greeting {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.name {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.what_i_do_short {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.what_i_do_long {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.link_to_best_proj_container {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+
+
+
+.logo_container.visible {
+    animation: fadeIn .5s ease forwards;
+}
+
+.li_about.visible {
+    animation: fadeIn .5s ease .1s forwards;
+}
+
+.li_exp.visible {
+    animation: fadeIn .5s ease .2s forwards;
+}
+
+.li_proj.visible {
+    animation: fadeIn .5s ease .3s forwards;
+}
+
+.li_contact.visible {
+    animation: fadeIn .5s ease .4s forwards;
+}
+
+.resume_div_container.visible {
+    animation: fadeIn .5s ease .5s forwards;
+}
+
+/* .resume_fill_div.visible {
+    animation: fadeInALT .5s ease forwards .5s;
+}
+
+.resume_btn.visible {
+    animation: fadeInALT .5s ease forwards .5s;
+} */
+
+/* here here */
+.resume_btn > a:hover {
+    transform: translate(-55%, -58%);
+}
+
+
+.greeting.visible {
+    animation: fadeIn .5s ease .6s forwards;
+
+}
+
+.name.visible {
+    animation: fadeIn .5s ease .7s forwards;
+}
+
+.what_i_do_short.visible {
+    animation: fadeIn .5s ease .8s forwards;
+}
+
+.what_i_do_long.visible {
+    animation: fadeIn .5s ease .9s forwards;
+}
+
+.link_to_best_proj_container.visible {
+    animation: fadeIn .5s ease 1s forwards;
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeInALT {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

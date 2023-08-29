@@ -1,8 +1,35 @@
 // p stand for projects
+import {useRef, useEffect, useState} from 'react'
+
+
 const Projects = () => {
+    const pRef = useRef();
+    const [visibilityPercentage, setVP] = useState(0);
+    const [TIC, setTIC] = useState(false);
+
+    let pOptions = {
+        threshold: [.1,.2,.3,.4,.5,.6,.7,.8,.9,1],
+    }
+
+    // console.log(TIC, visibilityPercentage)
+
+    useEffect(() => {
+        const pObserver = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setVP(Math.floor(entry.intersectionRatio * 100))            
+        }, pOptions)
+        pObserver.observe(pRef.current)
+    }, [])
+
+    useEffect(() => {
+        if (visibilityPercentage > 10) {
+            setTIC(true)
+        }
+    }, [visibilityPercentage])
+
     return (
         <>
-            <section className="p_section counter_section">
+            <section ref={pRef} className={TIC ? "p_section counter_section visible" : "p_section counter_section invisible"}>
                 <div className="p_title_container">
                     <h1 className="p_title">Projects</h1>
                     <div className="p_title_line"></div>

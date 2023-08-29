@@ -4,7 +4,9 @@ import { useState, useEffect } from 'react';
 
 const LoadingScreen = () => {
     const [loading, setLoading] = useState(false);
-    const [animating, setAnimating] = useState(false)
+    const [animating, setAnimating] = useState();
+
+    console.log(animating)
     useEffect(() => {
         setLoading(true)
         setTimeout(() => {
@@ -16,7 +18,7 @@ const LoadingScreen = () => {
         setAnimating(true)
         setTimeout(() => {
             setAnimating(false)
-            console.log(animating)
+            // console.log(animating)
         }, 4000)
         
       }, [])
