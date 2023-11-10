@@ -74,7 +74,7 @@ const Projects = () => {
                     </ul>
                 </li>
                 <li className="project_container">
-                    <a className='project_link' href='#'></a>
+                    <a className='project_link' href='https://youtu.be/Z44rMa1vXbM' target="_blank"></a>
                     <div className="p_icon_container">
                         <svg width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 38H42.5C44.7091 38 46.5 36.2091 46.5 34V10.5C46.5 8.29086 44.7091 6.5 42.5 6.5H20.7695C19.6425 6.5 18.5678 6.02459 17.8097 5.19069L15.1903 2.30931C14.4322 1.47541 13.3575 1 12.2305 1H5.5C3.29086 1 1.5 2.79086 1.5 5V34C1.5 36.2091 3.29086 38 5.5 38Z" stroke="#BEA5A9" strokeWidth="2"/>
